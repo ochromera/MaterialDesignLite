@@ -26,43 +26,45 @@
 
 /*left fixed navbar*/
 
+
 /*app bar*/
 
-#only-grup-card {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+.wide-card.mdl-card {
+    width: 512px;
 }
 
-#demo-card_server  {
-    width: 715px;
-    height: 310px;
-    margin-top: -50px;
-    /*margin-left: 275px !important;*/
-    z-index: 3 !important;
+.square-card.mdl-card {
+    width: 256px;
+    height: 256px;
 }
 
-#demo-card_statistic {
-    width: 715px;
-    height: 310px;
-    margin-top: -50px;
-    /*margin-left: 20px;*/
-    z-index: 3 !important;
+.image-card.mdl-card {
+    width: 256px;
+    height: 256px;
+    background: url(../img/sahara.jpg) center / cover;
 }
 
-
-/*only-grup-card_two*/
-#only-grup-card_two {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+.image-card-image__filename {
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
 }
 
-.{
-    width: 710px;
-    height: 100px;
+.event-card.mdl-card {
+    width: 256px;
+    height: 256px;
+    background: #3E4EB8;
+}
+
+.event-card.mdl-card__title {
+    color: #fff;
+    height: 176px;
+}
+
+.event-card > .mdl-card__actions {
+    border-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    color: #fff;
 }
