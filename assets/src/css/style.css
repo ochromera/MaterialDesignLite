@@ -1,0 +1,68 @@
+/*header*/
+.mdl-layout__header {
+    display: flex;
+    height: 260px !important;
+}
+
+.mdl-layout__header-row {
+    margin-top: 25px !important;
+}
+
+.mdl-layout__input {
+    margin-left: 90px;
+}
+
+.one-title {
+
+}
+
+.mdl-layout__headline-3 {
+    margin-top: 100px;
+    margin-left: -330px;
+    z-index: 9;
+}
+
+/*left navbar*/
+
+/*left fixed navbar*/
+
+/*app bar*/
+
+#only-grup-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+#demo-card_server  {
+    width: 715px;
+    height: 310px;
+    margin-top: -50px;
+    /*margin-left: 275px !important;*/
+    z-index: 3 !important;
+}
+
+#demo-card_statistic {
+    width: 715px;
+    height: 310px;
+    margin-top: -50px;
+    /*margin-left: 20px;*/
+    z-index: 3 !important;
+}
+
+
+/*only-grup-card_two*/
+#only-grup-card_two {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.{
+    width: 710px;
+    height: 100px;
+}
