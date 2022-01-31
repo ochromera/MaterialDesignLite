@@ -1,7 +1,12 @@
 /*header*/
+body {
+    background-color: #22313a;
+}
+
 .mdl-layout__header {
     display: flex;
     height: 260px !important;
+    background-color: #1e2a31 !important;
 }
 
 .mdl-layout__header-row {
@@ -19,18 +24,33 @@
 .mdl-layout__headline-3 {
     margin-top: 100px;
     margin-left: -330px;
-    z-index: 9;
+
 }
 
 /*left navbar*/
+.mdl-layout__drawer {
+    background-color: #22313a!important;
+}
+
+
+
+
 
 /*left fixed navbar*/
 
 
 /*app bar*/
 
+table {
+    margin-top: -43px;
+}
+
 .wide-card.mdl-card {
-    width: 512px;
+    margin-left: 290px;
+    background-color: #2b3c46;
+    margin-top: 20px;
+    width: 510px;
+    z-index: 9;
 }
 
 .square-card.mdl-card {
@@ -39,21 +59,16 @@
 }
 
 .image-card.mdl-card {
-    width: 256px;
+    margin-top: 20px;
+    width: 410px;
     height: 256px;
     background: url(../img/sahara.jpg) center / cover;
 }
 
-.image-card-image__filename {
-    color: #000;
-    font-size: 14px;
-    font-weight: bold;
-}
 
 .event-card.mdl-card {
     width: 256px;
     height: 256px;
-    background: #3E4EB8;
 }
 
 .event-card.mdl-card__title {
