@@ -1,45 +1,69 @@
+@font-face {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+
 /*header*/
 body {
-    background-color: #22313a;
+    /*background-color: #22313a;*/
+    height: 100%;
+    width: 100%;
 }
 
 .mdl-layout__header {
-    display: flex;
-    height: 260px !important;
+    height: 260px;
     background-color: #1e2a31 !important;
 }
 
 .mdl-layout__header-row {
-    margin-top: 25px !important;
+    margin-top: 60px !important;
+}
+
+.mdl-layout__header-row *:first-child {
+    font-size: 20px !important;
 }
 
 .mdl-layout__input {
     margin-left: 90px;
+    color: white;
 }
 
-.one-title {
+.textfield__input {
+    color: white !important;
+}
+
+/*mdl-menu__item*/
+. {
+    z-index: 99 !important;
+}
+
+/*left drawer navbar*/
+
+.mdl-layout__drawer-button {
 
 }
 
-.mdl-layout__headline-3 {
-    margin-top: 100px;
-    margin-left: -330px;
-
-}
-
-/*left navbar*/
 .mdl-layout__drawer {
-    background-color: #22313a!important;
+    background-color: #22313a !important;
+    /*width: 15%!important;*/
 }
-
-
-
 
 
 /*left fixed navbar*/
+aside {
+    float: left;
+    flex-direction: column;
+    /*margin: 0 1.5%;*/
+    width: 15%;
+}
 
 
 /*app bar*/
+section {
+    float: right;
+    margin: 30px 1%;
+    width: 85%;
+}
 
 table {
     margin-top: -43px;
