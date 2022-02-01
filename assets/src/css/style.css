@@ -1,5 +1,5 @@
 body {
-
+    /*background-color: #1e2a31;*/
 }
 
 .mdl-layout__header {
@@ -28,7 +28,7 @@ thead {
 
 .wide-card.mdl-card {
     width: 512px;
-    z-index: 5;
+    z-index: 3;
 }
 
 
