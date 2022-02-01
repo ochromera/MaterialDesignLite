@@ -13,16 +13,45 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="shortcut icon" href="assets/src/icons/" type="image/x-icon">
+
+    <script langauage="javascript">
+        function showMessage(value) {
+            document.getElementById("message").innerHTML = value;
+        }
+    </script>
+
 </head>
+
 <body>
 <!-- Always shows a header, even in smaller screens. -->
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
             <!-- Title -->
-            <span class="mdl-layout-title">Material</span>
-            <span class="mdl-layout__subtitle-text">admin extended dark</span>
-            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout__content">
+                <span class="mdl-layout-title">Material</span>
+                <span class="mdl-layout__subtitle-text">admin extended dark</span>
+            </div>
+            <!--            Textfields-->
+
+
+            <form action = "#">
+                <div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label--expandable">
+                    <label class = "mdl-button mdl-js-button mdl-button--icon"
+                           for = "text1">
+                        <i class = "material-icons">search</i>
+                    </label>
+                    <input class = "mdl-textfield__input" type = "text" id = "text1">
+                    <label class = "mdl-textfield__label" for = "text1"> Search for people, files & reports</label>
+                </div>
+            </form>
+            <!--            subtitle-->
+            <div class="mdl-layout__content">
+                <span class="mdl-layout-title">DASHBOARD</span>
+                <span class="mdl-layout__subtitle-text">Welcome to the unique Material Admin Extended Dark web app experience!</span>
+            </div>
+
+
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation. We hide it in small screens. -->
             <nav class="mdl-navigation mdl-layout--large-screen-only">
@@ -30,270 +59,251 @@
                 <a class="mdl-navigation__link" href="">Link</a>
                 <a class="mdl-navigation__link" href="">Link</a>
             </nav>
+
         </div>
     </header>
-    <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">ALERTS</span>
-        <span class="mdl-layout__subtitle-text">
-                  100+ New Alerts
-                </span>
-        <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="">Link</a>
-            <a class="mdl-navigation__link" href="">Link</a>
-            <a class="mdl-navigation__link" href="">Link</a>
-            <a class="mdl-navigation__link" href="">Link</a>
-            <a class="mdl-navigation__link" href="">Link</a>
-        </nav>
+    <!--   выпадалка  -->
+    <div class="mdl-layout  mdl-js-layout">
+        <div class="mdl-layout__drawer">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <div class="mdl-layout__content">
+                        <span class="mdl-layout-title">ALERTS</span>
+                        <span class="mdl-layout__subtitle-text">100+ New Alerts</span>
+                    </div>
+                </div>
+            </header>
+
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">Email MArketing</a>
+                <a class="mdl-navigation__link" href="">New order recived</a>
+                <a class="mdl-navigation__link" href="">Upcoming event</a>
+                <a class="mdl-navigation__link" href="">Server limitreached!</a>
+                <a class="mdl-navigation__link" href="">Sold an item</a>
+            </nav>
+        </div>
+
     </div>
+
     <main class="mdl-layout__content">
         <div class="page-content">
             <!-- Your content goes here -->
-                <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
-                    <div class="mdl-layout__drawer">
-                        <nav class="mdl-navigation">
-                            <a class="mdl-navigation__link" href="">Dashboard</a>
-                            <a class="mdl-navigation__link" href="">Typography</a>
-                            <a class="mdl-navigation__link" href="">Widgets</a>
-                            <a class="mdl-navigation__link" href="">Tables</a>
-                            <a class="mdl-navigation__link" href="">Forms</a>
-                            <a class="mdl-navigation__link" href="">User interface</a>
-                            <a class="mdl-navigation__link" href="">Javascript Components</a>
-                            <a class="mdl-navigation__link" href="">Charts and Maps</a>
-                            <a class="mdl-navigation__link" href="">Photo Gallery </a>
-                            <a class="mdl-navigation__link" href="">Calendar</a>
-                            <a class="mdl-navigation__link" href="">Sample Pages</a>
-                        </nav>
-                    </div>
+            <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+                <div class="mdl-layout__drawer">
+                    <nav class="mdl-navigation">
+                        <a class="mdl-navigation__link" href="">Dashboard</a>
+                        <a class="mdl-navigation__link" href="">Typography</a>
+                        <a class="mdl-navigation__link" href="">Widgets</a>
+                        <a class="mdl-navigation__link" href="">Tables</a>
+                        <a class="mdl-navigation__link" href="">Forms</a>
+                        <a class="mdl-navigation__link" href="">User interface</a>
+                        <a class="mdl-navigation__link" href="">Javascript Components</a>
+                        <a class="mdl-navigation__link" href="">Charts and Maps</a>
+                        <a class="mdl-navigation__link" href="">Photo Gallery </a>
+                        <a class="mdl-navigation__link" href="">Calendar</a>
+                        <a class="mdl-navigation__link" href="">Sample Pages</a>
+                    </nav>
                 </div>
-                </div>
+            </div>
+        </div>
 
 </div>
 <!--app bar-->
 
-<table>
-
-    <tr>
-        <td>
-            <div class = "wide-card mdl-card mdl-shadow--2dp">
-                <div class = "mdl-card__title">
-                    <h2 class = "mdl-card__title-text">H5</h2>
-                </div>
-
-                <div class = "mdl-card__supporting-text">
-                    HTML5 is the next major revision of the HTML standard
-                    superseding HTML 4.01, XHTML 1.0, and XHTML 1.1.
-                    HTML5 is a standard for structuring and presenting
-                    content on the World Wide Web.
-                </div>
-
-                <div class = "mdl-card__actions mdl-card--border">
-                    <a class = "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                        Learn HTML5</a>
-                </div>
-
-                <div class = "mdl-card__menu">
-                    <button class = "mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                        <i class = "material-icons">share</i></button>
-                </div>
+<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp"
+<thead>
+<tr class="mdl-data-table__cell--non-numeric">
+    <td>
+        <div class="wide-card mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">SERVER PROCESS</h2>
             </div>
-        </td>
-    </tr>
 
-
-    <tr>
-        <td>
-            <div class = "wide-card mdl-card mdl-shadow--2dp">
-                <div class = "mdl-card__title">
-                    <h2 class = "mdl-card__title-text">H5</h2>
-                </div>
-
-                <div class = "mdl-card__supporting-text">
-                    HTML5 is the next major revision of the HTML standard
-                    superseding HTML 4.01, XHTML 1.0, and XHTML 1.1.
-                    HTML5 is a standard for structuring and presenting
-                    content on the World Wide Web.
-                </div>
-
-                <div class = "mdl-card__actions mdl-card--border">
-                    <a class = "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                        Learn HTML5</a>
-                </div>
-
-                <div class = "mdl-card__menu">
-                    <button class = "mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                        <i class = "material-icons">share</i></button>
-                </div>
+            <div class="mdl-card__supporting-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente,
+                voluptatum.
             </div>
-        </td>
-    </tr>
 
 
-    <tr>
-        <td>
-            <div class = "wide-card mdl-card mdl-shadow--2dp">
-                <div class = "mdl-card__title">
-                    <h2 class = "mdl-card__title-text">H5</h2>
-                </div>
+        </div>
+    </td>
+</tr>
 
-                <div class = "mdl-card__supporting-text">
-                    HTML5 is the next major revision of the HTML standard
-                    superseding HTML 4.01, XHTML 1.0, and XHTML 1.1.
-                    HTML5 is a standard for structuring and presenting
-                    content on the World Wide Web.
-                </div>
+</th>
 
-                <div class = "mdl-card__actions mdl-card--border">
-                    <a class = "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                        Learn HTML5</a>
-                </div>
 
-                <div class = "mdl-card__menu">
-                    <button class = "mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                        <i class = "material-icons">share</i></button>
-                </div>
+<tr class="mdl-data-table__cell--non-numeric">
+    <td>
+        <div class="wide-card mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">SALES STATISTICS</h2>
             </div>
-        </td>
-    </tr>
 
-
-    <tr>
-        <td>
-            <div class = "wide-card mdl-card mdl-shadow--2dp">
-                <div class = "mdl-card__title">
-                    <h2 class = "mdl-card__title-text">H5</h2>
-                </div>
-
-                <div class = "mdl-card__supporting-text">
-                    HTML5 is the next major revision of the HTML standard
-                    superseding HTML 4.01, XHTML 1.0, and XHTML 1.1.
-                    HTML5 is a standard for structuring and presenting
-                    content on the World Wide Web.
-                </div>
-
-                <div class = "mdl-card__actions mdl-card--border">
-                    <a class = "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                        Learn HTML5</a>
-                </div>
-
-                <div class = "mdl-card__menu">
-                    <button class = "mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                        <i class = "material-icons">share</i></button>
-                </div>
+            <div class="mdl-card__supporting-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, rem.
             </div>
-        </td>
-    </tr>
+
+        </div>
+    </td>
+</tr>
+</thead>
 
 
-    <tr>
-        <td>
-            <div class = "wide-card mdl-card mdl-shadow--2dp">
-                <div class = "mdl-card__title">
-                    <h2 class = "mdl-card__title-text">H5</h2>
-                </div>
+<tbody>
 
-                <div class = "mdl-card__supporting-text">
-                    HTML5 is the next major revision of the HTML standard
-                    superseding HTML 4.01, XHTML 1.0, and XHTML 1.1.
-                    HTML5 is a standard for structuring and presenting
-                    content on the World Wide Web.
-                </div>
-
-                <div class = "mdl-card__actions mdl-card--border">
-                    <a class = "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                        Learn HTML5</a>
-                </div>
-
-                <div class = "mdl-card__menu">
-                    <button class = "mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                        <i class = "material-icons">share</i></button>
-                </div>
+<tr class="mdl-data-table__cell--non-numeric">
+    <td>
+        <div class="wide-card mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">WEBSITE VIEWS</h2>
             </div>
-        </td>
-    </tr>
 
-
-    <tr>
-        <td>
-            <div class = "wide-card mdl-card mdl-shadow--2dp">
-                <div class = "mdl-card__title">
-                    <h2 class = "mdl-card__title-text">H5</h2>
-                </div>
-
-                <div class = "mdl-card__supporting-text">
-                    HTML5 is the next major revision of the HTML standard
-                    superseding HTML 4.01, XHTML 1.0, and XHTML 1.1.
-                    HTML5 is a standard for structuring and presenting
-                    content on the World Wide Web.
-                </div>
-
-                <div class = "mdl-card__actions mdl-card--border">
-                    <a class = "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                        Learn HTML5</a>
-                </div>
-
-                <div class = "mdl-card__menu">
-                    <button class = "mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                        <i class = "material-icons">share</i></button>
-                </div>
+            <div class="mdl-card__supporting-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, quis!
             </div>
-        </td>
-    </tr>
+        </div>
+    </td>
+</tr>
 
 
-    <tr>
-        <td>
-            <div class = "wide-card mdl-card mdl-shadow--2dp">
-                <div class = "mdl-card__title">
-                    <h2 class = "mdl-card__title-text">H5</h2>
-                </div>
-
-                <div class = "mdl-card__supporting-text">
-                    HTML5 is the next major revision of the HTML standard
-                    superseding HTML 4.01, XHTML 1.0, and XHTML 1.1.
-                    HTML5 is a standard for structuring and presenting
-                    content on the World Wide Web.
-                </div>
-
-                <div class = "mdl-card__actions mdl-card--border">
-                    <a class = "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                        Learn HTML5</a>
-                </div>
-
-                <div class = "mdl-card__menu">
-                    <button class = "mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                        <i class = "material-icons">share</i></button>
-                </div>
+<tr class="mdl-data-table__cell--non-numeric">
+    <td>
+        <div class="wide-card mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">WEBSITE IMPRESIONS</h2>
             </div>
-        </td>
-    </tr>
 
-
-    <tr>
-        <td>
-            <div class = "wide-card mdl-card mdl-shadow--2dp">
-                <div class = "mdl-card__title">
-                    <h2 class = "mdl-card__title-text">H5</h2>
-                </div>
-
-                <div class = "mdl-card__supporting-text">
-                    HTML5 is the next major revision of the HTML standard
-                    superseding HTML 4.01, XHTML 1.0, and XHTML 1.1.
-                    HTML5 is a standard for structuring and presenting
-                    content on the World Wide Web.
-                </div>
-
-                <div class = "mdl-card__actions mdl-card--border">
-                    <a class = "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                        Learn HTML5</a>
-                </div>
-
-                <div class = "mdl-card__menu">
-                    <button class = "mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                        <i class = "material-icons">share</i></button>
-                </div>
+            <div class="mdl-card__supporting-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, itaque?
             </div>
-        </td>
-    </tr>
+        </div>
+    </td>
+</tr>
+
+
+<tr class="mdl-data-table__cell--non-numeric">
+    <td>
+        <div class="wide-card mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">TOTAL SALES</h2>
+            </div>
+
+            <div class="mdl-card__supporting-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, quisquam.
+            </div>
+
+        </div>
+    </td>
+</tr>
+
+
+<tr class="mdl-data-table__cell--non-numeric">
+    <td>
+        <div class="wide-card mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">MOST VIEWS SIGNNUPS</h2>
+            </div>
+
+            <div class="mdl-card__supporting-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, tempore!
+            </div>
+        </div>
+    </td>
+</tr>
+
+
+<tr class="mdl-data-table__cell--non-numeric">
+    <td>
+        <div class="wide-card mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">REATIME VISITORS</h2>
+            </div>
+
+            <div class="mdl-card__supporting-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, officia!
+            </div>
+        </div>
+    </td>
+</tr>
+
+
+<tr class="mdl-data-table__cell--non-numeric">
+    <td>
+        <div class="wide-card mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">card img</h2>
+            </div>
+
+            <div class="mdl-card__supporting-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, ex?
+            </div>
+        </div>
+    </td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr class="mdl-data-table__cell--non-numeric">
+    <td>
+        <div class="wide-card mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">TODO LIST</h2>
+            </div>
+
+            <div class="mdl-card__supporting-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, voluptate.
+            </div>
+        </div>
+    </td>
+</tr>
+
+
+<tr class="mdl-data-table__cell--non-numeric">
+    <td>
+        <div class="wide-card mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">RCENT POSTS</h2>
+            </div>
+
+            <div class="mdl-card__supporting-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vero.
+            </div>
+
+        </div>
+    </td>
+</tr>
+
+
+<tr class="mdl-data-table__cell--non-numeric">
+    <td>
+        <div class="wide-card mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">CALENDAR</h2>
+            </div>
+
+            <div class="mdl-card__supporting-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, unde!
+            </div>
+        </div>
+    </td>
+</tr>
+
+
+<tr class="mdl-data-table">
+    <td>
+        <div class="wide-card mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">GROWTH RATE</h2>
+            </div>
+
+            <div class="mdl-card__supporting-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, eveniet?
+            </div>
+
+        </div>
+    </td>
+</tr>
+
+</tfoot>
 
 
 </table>
