@@ -9,6 +9,8 @@ body {
 
 
 /*нужно понять как называеться действие при котором открываеться Left bar  и навесить собитие*/
+/*navbar left */
+
 .mdl-layout__drawer {
     /*width:345px!important; ;*/
 }
@@ -17,10 +19,16 @@ body {
 /*<!--app bar-->*/
 
 table {
-    float: right ;
+    float: right;
+    margin: 11%;
 }
+thead {
+
+}
+
 .wide-card.mdl-card {
     width: 512px;
+    z-index: 5;
 }
 
 
