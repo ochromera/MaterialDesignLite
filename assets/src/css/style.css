@@ -1,98 +1,33 @@
-@font-face {
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-}
-
-
-/*header*/
 body {
-    /*background-color: #22313a;*/
-    height: 100%;
-    width: 100%;
+
 }
 
 .mdl-layout__header {
-    height: 260px;
+    height: 260px !important;
     background-color: #1e2a31 !important;
 }
 
-.mdl-layout__header-row {
-    margin-top: 60px !important;
-}
 
-.mdl-layout__header-row *:first-child {
-    font-size: 20px !important;
-}
-
-.mdl-layout__input {
-    margin-left: 90px;
-    color: white;
-}
-
-.textfield__input {
-    color: white !important;
-}
-
-/*mdl-menu__item*/
-. {
-    z-index: 99 !important;
-}
-
-/*left drawer navbar*/
-
-.mdl-layout__drawer-button {
-
-}
-
+/*нужно понять как называеться действие при котором открываеться Left bar  и навесить собитие*/
 .mdl-layout__drawer {
-    background-color: #22313a !important;
-    /*width: 15%!important;*/
+    /*width:345px!important; ;*/
 }
 
 
-/*left fixed navbar*/
-aside {
-    float: left;
-    flex-direction: column;
-    /*margin: 0 1.5%;*/
-    width: 15%;
-}
-
-
-/*app bar*/
-section {
-    float: right;
-    margin: 30px 1%;
-    width: 85%;
-}
+/*<!--app bar-->*/
 
 table {
-    margin-top: -43px;
+    float: right ;
 }
-
 .wide-card.mdl-card {
-    margin-left: 290px;
-    background-color: #2b3c46;
-    margin-top: 20px;
-    width: 510px;
-    z-index: 9;
-}
-
-.square-card.mdl-card {
-    width: 256px;
-    height: 256px;
-}
-
-.image-card.mdl-card {
-    margin-top: 20px;
-    width: 410px;
-    height: 256px;
-    background: url(../img/sahara.jpg) center / cover;
+    width: 512px;
 }
 
 
 .event-card.mdl-card {
     width: 256px;
     height: 256px;
+    background: #3E4EB8;
 }
 
 .event-card.mdl-card__title {
